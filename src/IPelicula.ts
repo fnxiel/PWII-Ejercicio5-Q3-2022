@@ -6,6 +6,7 @@ import { IPersona } from './IPersona'
 
 export interface IPelicula{
     //Propiedades
+    id: number
     titulo: string
     año: number
     clasificacion: string
@@ -18,8 +19,8 @@ export interface IPelicula{
     director?: IPersona
     escritores?: IPersona[]
     estrellas?: IPersona[]
-    comentarios: IComentario[]
-    puntaje: number
+    //comentarios: IComentario[]
+    //puntaje: number
     fechaSalida?: Date 
     //Funciones
     calificar(): number
